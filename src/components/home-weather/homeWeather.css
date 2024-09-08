@@ -1,0 +1,17 @@
+.home-text {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-color: black;
+    transform: translate(-50%, -50%);
+    background: rgba(241, 239, 239, 0.1); 
+    backdrop-filter: blur(1px); 
+    border-radius: 20px; 
+    padding: 20px 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Optional text shadow for better readability */
+}

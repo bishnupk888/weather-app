@@ -6,12 +6,14 @@ import PropTypes from 'prop-types';
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
   const loadOptions = (inputValue) => {
+   
     return fetch(
       `${GEO_API_URL}?minpopulation=100000&namePrefix=${inputValue}`,
       geoApiOptions
     )
       .then((response) => response.json())
       .then((response) => {
+        
         return {
             options:response.data.map((city)=>{
                 return {

@@ -1,9 +1,10 @@
-.weather{
+.weather {
     width: 300px;
     border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjusted shadow for a softer 3D effect */
     color: #fff;
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter, semi-transparent background for a bright glass effect */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
 }
