@@ -19,7 +19,7 @@ const Background = ({ weatherCondition, timeOfDay, children, setLoading }) => {
         setBackgroundImage(data.hits[randomNumber].largeImageURL);
       } else {
         console.warn('No images found for the specified query.');
-        setBackgroundImage(DEFAULT_BACKGROUND_IMAGE); // Fallback to default image
+        setBackgroundImage(DEFAULT_BACKGROUND_IMAGE); 
       }
       setTimeout(() => {
         setLoading(false)

@@ -45,11 +45,11 @@ function App() {
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forecastResponse });
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false); 
       })
       .catch((err) => {
         console.error(err);
-        setLoading(false); // Ensure loading is turned off even on error
+        setLoading(false); 
       });
   };
 
@@ -57,7 +57,7 @@ function App() {
   const weatherNow = currentWeather?.weather[0]?.description;
 
   useEffect(() => {
-    setLoading(true); // Set loading to true on initial load
+    setLoading(true); 
     setTimeout(() => {
       setLoading(false);
     }, 3000);
