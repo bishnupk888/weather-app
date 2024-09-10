@@ -41,6 +41,7 @@ function App() {
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
+        
         const forecastResponse = await response[1].json();
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
