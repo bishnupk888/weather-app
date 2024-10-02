@@ -73,7 +73,7 @@ function App() {
           {(!currentWeather && !forecast) && <HomeWeather />}
           {currentWeather && <CurrentWeather data={currentWeather} />}
           {forecast && <Forecast data={forecast} />}
-        </div>
+        </div> 
       </Background>
       
     </>
